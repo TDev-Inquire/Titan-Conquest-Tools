@@ -1,8 +1,8 @@
 {
-    "name": "Farm RPG Tools",
+    "name": "Titan Conquest Tools",
     "version": "0.0.0.1",
     "manifest_version": 2,
-    "description": "A set of scripts for Farm RPG",
+    "description": "A set of scripts for Titan Quest RPG",
     "permissions": [
         "tabs", "<all_urls>",
         "storage"

@@ -1,31 +1,27 @@
-function doPlant(){
-    chrome.tabs.executeScript(null, {file: "/PlantHarvest/plant.js"});
-
+function doAttack(){
+    chrome.tabs.executeScript(null, {file: "/Attack/harvest.js"});
     };
 
-function doHarvest(){
-    chrome.tabs.executeScript(null, {file: "/PlantHarvest/harvest.js"});
-    };
-
-function doAuto(){
-    chrome.tabs.executeScript(null, {file: "/PlantHarvest/AutoFarm.js"});
+function doSelect(){
+    chrome.tabs.executeScript(null, {file: "/Attack/AutoFarm.js"});
     };
     
-function doFish(){
-    chrome.tabs.executeScript(null, {file: "/PlantHarvest/fish.js"});
+function doLoop(){
+    chrome.tabs.executeScript(null, {file: "/Attack/fish.js"});
     };
     
     
-    document.getElementById("btnPlant").onclick = doPlant;
-    document.getElementById("btnHarvest").onclick = doHarvest;
-    document.getElementById("btnFish").onclick = doFish;
+    document.getElementById("btnAttack").onclick = doAttack;
+    document.getElementById("btnSelect").onclick = doSelect;
+    document.getElementById("btnLoop").onclick = doLoop;
 
     if($("#repeat").is(':checked')){
         // Code in the case checkbox is checked.
         function doRepeat(){
-            chrome.tabs.executeScript(null, {file: "/PlantHarvest/AutoFarm.js"});
+            chrome.tabs.executeScript(null, {file: "/Attack/AutoFarm.js"});
             };
         
+
    } else {
         // Code in the case checkbox is NOT checked.
    }
